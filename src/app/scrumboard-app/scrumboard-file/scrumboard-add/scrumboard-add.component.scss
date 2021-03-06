@@ -1,0 +1,43 @@
+.app-scrumboard-add {
+    background: #fafafa;
+    height: 100%;
+    .scrumboard-add-nav {
+        .scrumboard-add-toolbar {
+            background-color: #039be5;
+            height: 100px;
+            .scrumboard-add-link {
+                margin-left: 25px;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+        }
+    }
+    .example-spacer {
+        flex: .5 0 auto;
+    }
+    .example-spacer-button {
+        color: #e7f6fd;
+        .example-text {
+            margin-left: 10px;
+        }
+        .example-icon-edit {
+            margin-left: 10px;
+        }
+    }
+    .main-body {
+        padding: 20px;
+        .main-body-row {
+            .main-body-card {
+                padding: 8px 51px 8px 0;
+                .main-body-title {
+                    margin-bottom: 0;
+                    cursor: pointer;
+                    font-size: 16px;
+                    .main-body-button {
+                        margin-right: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

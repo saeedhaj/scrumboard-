@@ -1,0 +1,42 @@
+<div class="app-scrumboard-add">
+    <header class="scrumboard-add-nav ">
+        <mat-toolbar class="scrumboard-add-toolbar">
+            <button mat-flat-button>
+              <mat-icon>addchart</mat-icon>
+            <span class="scrumboard-add-link">board</span>
+            </button>
+            <span class="example-spacer"></span>
+            <button class="example-spacer-button" mat-icon-button>
+              <mat-icon>visibility</mat-icon>
+              <span class="example-text">asdkhfsdlkds</span>
+              <mat-icon class="example-icon-edit">edit</mat-icon>
+            </button>
+        </mat-toolbar>
+    </header>
+    <main class="main-body">
+        <div fxLayout="row" class="main-body-row">
+
+            <mat-card class="main-body-card">
+                <mat-card-header>
+                    <mat-card-title class="main-body-title">
+                        <button class="main-body-button" mat-mini-fab color="warn">
+                            <mat-icon>add</mat-icon>
+                          </button> Add a List
+                    </mat-card-title>
+
+                </mat-card-header>
+            </mat-card>
+
+        </div>
+        <form>
+            <mat-form-field class="example-form-field">
+                <mat-label>Clearable input</mat-label>
+                <input matInput type="text" [(ngModel)]="value">
+                <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+                    <mat-icon>download_done</mat-icon>
+                    <mat-icon>close</mat-icon>
+                </button>
+            </mat-form-field>
+        </form>
+    </main>
+</div>

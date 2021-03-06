@@ -5,7 +5,17 @@ import { ScrumboardAppComponent } from "./scrumboard-app.component";
 const routes: Routes = [
   {
     path:'',
-    component:ScrumboardAppComponent
+    component:ScrumboardAppComponent,
+    children:[
+      {
+        path:'',
+        redirectTo:'scrmboard-file'
+      },
+      {
+        path:'scrmboard-file',
+        loadChildren:()=>import("./scrumboard-file/scrumboard-file.module").then(m=>m.ScrumboardFileModule)
+      }
+    ]
   }
 ];
 
