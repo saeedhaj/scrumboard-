@@ -1,0 +1,29 @@
+.app-scrumboard-list {
+    background-color: #3c4252;
+    color: white;
+    height: 100%;
+    padding: 20px;
+    .container {
+        .container-title {
+            margin: 50px 0;
+            font-size: 2em;
+            font-weight: 300;
+        }
+        .scrumboard-card {
+            background: #353a48;
+            color: white;
+            height: 125px;
+            .scrumboard-card-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+            .scrumboard-card-title {}
+            .scrumboard-card-text {
+                color: white;
+            }
+        }
+    }
+}
